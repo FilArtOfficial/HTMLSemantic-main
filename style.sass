@@ -1,0 +1,58 @@
+$p-max-width: 750px
+$grid-gap: 20px
+$img-max-size: 365px
+
+p,
+blockquote 
+  max-width: $p-max-width
+  margin-left: auto
+  margin-right: auto
+  
+
+
+// Сетка для адаптивности
+main 
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: $grid-gap
+
+  @media (min-width: 768px)  // Примерная ширина планшетов и десктопов
+    grid-template-columns: repeat(2, 1fr)
+  
+
+  @media (min-width: 1024px) // Ширина десктопов и больших экранов
+    grid-template-columns: repeat(3, 1fr)
+  
+
+
+// Обновлённый стиль для фотографии
+img
+  width: 320px
+  height: 365px
+video
+  width: 350px
+  height: 250px
+
+// Цвет ссылок по умолчанию
+footer a 
+  color: purple
+  transition: color 0.3s // Плавное изменение цвета при наведении
+
+  &:hover  // Цвет ссылок при наведении
+    color: blue
+  
+
+
+// Нейтральный цвет для первой секции
+.section1 
+  background-color: #f2f2f2 // Нейтральный цвет по вашему усмотрению
+
+
+// Нейтральный цвет для второй секции
+.section2 
+  background-color: #e6e6e6 // Нейтральный цвет по вашему усмотрению
+
+
+// Изменение шрифта текста на Times New Roman
+body 
+  font-family: 'Times New Roman', Times, serif

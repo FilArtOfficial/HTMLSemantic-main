@@ -1,0 +1,52 @@
+p,
+blockquote {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+img {
+  width: 320px;
+  height: 365px;
+}
+
+video {
+  width: 350px;
+  height: 250px;
+}
+
+footer a {
+  color: purple;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: blue;
+}
+
+.section1 {
+  background-color: #f2f2f2;
+}
+
+.section2 {
+  background-color: #e6e6e6;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}/*# sourceMappingURL=style.css.map */
